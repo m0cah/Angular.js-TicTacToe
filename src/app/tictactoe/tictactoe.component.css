@@ -1,0 +1,49 @@
+td{
+    width:100px;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 5%;
+  }
+
+  .game{
+    text-align: center;
+    width:300px;
+    height: auto;
+    margin-left: 200px;
+  }
+
+  .videoPlaceholder{
+    width: 500px;
+    height:300px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divider{
+    width:1px;
+    height: 50vh;
+    background-color: black;
+  }

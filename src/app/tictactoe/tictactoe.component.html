@@ -1,0 +1,44 @@
+<div class="wrapper">
+    <h1 class="title">
+        Cool Topics Project: Tic-Tac-Toe using the Angular.js Framework!
+    </h1>
+    <h2 class="credits">
+        Coded by: Michael Neal
+        <br>
+        Video Created by: Names
+    </h2>
+    <button *ngIf="this.logic.playerHasWon === true" id="startButton" (click)="start()">
+        Start Game
+    </button>
+    <div class="container">
+        <div class="game">
+            <p class="currentPlayer">Current Player: None</p>
+            <table *ngIf="this.logic.playerHasWon === false" class="board" >
+                <tr>
+                    <td (click)="handleClick($event)" id="0"></td>
+                    <td (click)="handleClick($event)" id="1"></td>
+                    <td (click)="handleClick($event)" id="2"></td>
+                </tr>
+                <tr>
+                    <td (click)="handleClick($event)" id="3"></td>
+                    <td (click)="handleClick($event)" id="4"></td>
+                    <td (click)="handleClick($event)" id="5"></td>
+                </tr>
+                <tr>
+                    <td (click)="handleClick($event)" id="6"></td>
+                    <td (click)="handleClick($event)" id="7"></td>
+                    <td (click)="handleClick($event)" id="8"></td>
+                </tr>
+            </table>
+            <p class="status"></p>
+        </div>
+        <div class="divider">
+            
+        </div>
+        <div class="videoPlaceholder">
+            <p>
+                Video Goes Here
+            </p>
+        </div>
+    </div>
+</div>
